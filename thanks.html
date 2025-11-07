@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — AIVault Labs</title>
+  <meta name="description" content="Thank you for joining the AIVault Labs presale waitlist." />
+  <meta name="theme-color" content="#0b1220" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: '#0b1220',
+            slate: '#152238',
+            cyan: '#19e3e3',
+            teal: '#19b1b1',
+            soft: '#a7b0c4',
+          },
+          boxShadow: {
+            glow: '0 0 0 2px rgba(25, 227, 227, 0.2), 0 10px 30px rgba(25, 227, 227, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-night text-white min-h-screen flex items-center justify-center">
+  <div class="max-w-lg mx-auto text-center p-8">
+    <div class="ring-anim inline-flex h-16 w-16 items-center justify-center rounded-full bg-slate/60 mb-6">
+      <img src="assets/logo.png" alt="AIVault Labs Logo" class="h-8 w-8" />
+    </div>
+    <h1 class="text-3xl font-semibold text-cyan mb-3">You're on the List!</h1>
+    <p class="text-soft mb-6">Thank you for joining the <span class="text-white font-semibold">AIVault Labs</span> presale waitlist. You'll receive an email confirmation shortly with next steps.</p>
+    <a href="/" class="inline-block px-6 py-3 rounded-md bg-cyan/10 hover:bg-cyan/20 text-cyan shadow-glow">Return to Home</a>
+  </div>
+</body>
+</html>
