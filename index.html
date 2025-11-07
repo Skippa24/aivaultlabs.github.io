@@ -6,7 +6,30 @@
   <title>AIVault Labs — Decentralized AI Treasury</title>
   <meta name="description" content="AIVault Labs is a decentralized, community-governed treasury backing AI startups, open-source research, and infrastructure across ETH, SOL, BNB & BTC." />
   <meta name="theme-color" content="#0b1220" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS CDN (fully working version) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          night: '#0b1220',
+          slate: '#152238',
+          cyan: '#19e3e3',
+          teal: '#19b1b1',
+          soft: '#a7b0c4',
+        },
+        boxShadow: {
+          glow: '0 0 0 2px rgba(25, 227, 227, 0.2), 0 10px 30px rgba(25, 227, 227, 0.08)',
+        },
+        backgroundImage: {
+          grid: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0)',
+        },
+      },
+    },
+  }
+</script>
+
 </head>
 <body class="bg-night text-white selection:bg-teal/30">
   <header class="sticky top-0 z-50 bg-night/80 backdrop-blur border-b border-white/5">
